@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>进入酒店小程序</title>
+</head>
+<body style="text-align:center;padding-top:60px;font-size:18px;">
+    <p>正在为您跳转酒店小程序...</p>
+    <button onclick="goMini()" style="margin-top:30px;padding:12px 25px;background:#07c160;color:#fff;border-radius:6px;border:0;font-size:16px;">
+        点击进入小程序
+    </button>
+
+<script>
+function goMini(){
+    // 你的小程序测试号跳转链接，不用修改
+    let url = "weixin://dl/business/?appid=wx3118029a5659fea6&env_version=develop";
+    location.href = url;
+}
+// 页面加载后自动尝试跳转，也可以手动点击按钮
+setTimeout(goMini, 800);
+</script>
+</body>
+</html>
